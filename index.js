@@ -9,6 +9,10 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+// app.use(cors({
+//     origin: 'http://localhost:5173'
+// }));
+
 import usuariosRouter from './rutas/usuariosRouter.js';
 
 //las rutas que empiecen por /api/alumnes se dirigirán a alumnesRouter
